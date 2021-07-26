@@ -15,12 +15,12 @@
 #define PDM_VIA_I2S 3 // output PDM coded sample on the I2S data pin (pin 33, by default, configurable, below)
 
 // Set output mode
-#define ESP32_AUDIO_OUT_MODE INTERNAL_DAC
+#define ESP32_AUDIO_OUT_MODE PT8211_DAC
 
 // For external I2S output, only: I2S_PINS
 #define ESP32_I2S_BCK_PIN 26
 #define ESP32_I2S_WS_PIN 25
-#define ESP32_I2S_DATA_PIN 33
+#define ESP32_I2S_DATA_PIN 22
 
 #include <driver/i2s.h>
 const i2s_port_t i2s_num = I2S_NUM_0;
